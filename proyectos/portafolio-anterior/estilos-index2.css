@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fondo colorido */
+/* body {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg,blue,rgb(255, 38, 0),rgb(255, 208, 0));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+
+
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+} */
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: center; (al sacarle esto, todos los elementos de body ya no se ubican en el medio)
+    align-items: center; */
+    color: #fff;
+    background: linear-gradient(45deg, #ff0055e1, #2195f3d0),url(./ing-fondolila.jpg);
+}
+/* el enlace arriba a la derecha para ir a inicio */
+.enlace-volver {
+    padding-left: 10px;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlace-volver:hover {
+    transition: 1s;
+    color: black;
+}
+
+.contenedor-enlace {
+    padding-top: 10px;
+}
+/* enlace para ir hacia la siguiente seccion */
+.ir-a {
+    color: #6cadf8;
+}
+
+/* seccion sobre mi texto*/
+.sobre-mi {
+    font-family: 'monoton', cursive;
+    padding: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 65px;
+}
+
+.foto-sombra{
+    width: 300px;
+    border-radius: 15%;
+    border: 1px solid #fff;
+}
+
+.parrafo {
+    margin: 50px 90px;
+}
+
+.imagenes{
+    border-radius: 10px;
+}
+
+.mi-cv {
+    height: 350px;
+    width: 400px;
+    margin-top: 15px;
+    margin-left: 35%;
+}
+
+  /* seccion responsive ------------------------------------------------------------------------*/
+@media screen and (max-width:650px){
+    .titulo {
+        font-size: 40px;
+    }
+
+    .foto-sombra {
+        width: 120px;
+        height: 120px;
+        margin-left: 140px;
+    }
+
+    .mi-cv {
+        width: 200px;
+        height: 250px;
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width:420px){
+        .titulo {
+            font-size: 25px;
+        }
+
+        .foto-sombra {
+            margin-left: 20px;
+        }
+
+        .mi-cv {
+            margin-left: 9px;
+        }
+
+
+}
+

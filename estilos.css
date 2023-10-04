@@ -126,6 +126,27 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
+#icon-menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 20px;
+    background: #080918;
+    border-radius: 100%;
+    color: #00e1ff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#icon-menu:hover {
+    opacity: 0.8;
+}
+
 /* estilos de titulo grande principal ----------------------------------*/
 .contenido-descripcion .titulo {
     text-transform: uppercase;
@@ -464,12 +485,36 @@ img {
     backdrop-filter: blur(0.3rem);
     -webkit-backdrop-filter: blur(0.3rem);
 }
+/* contenedor de los proyectos */
+.container-proyectos {
+    max-width: 1700px;
+    max-height: 3200px;
+    background: #0c0c0cb0;
+    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+    border-radius: 15px;
+}
 
 /* proyectos y diseños */
+
 
 .proyecto {
     height: 500px;
     padding: 60px;
+}
+
+.frame {
+    padding: 70px 20px;
+}
+
+iframe {
+    height: 300px;
+}
+
+.titulo-proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* BOTONES NEON */
@@ -477,6 +522,7 @@ img {
     position: relative;
     padding: 12px 30px;
     margin: 150px;
+    background-color: #11111185;
     font-size: 1.2rem;
     color: var(--color);
     border: 2px solid rgba(0, 0, 0, 0.5);
@@ -953,8 +999,8 @@ footer {
 }
 
 .iconos-redes-sociales a:hover {
-    background-color: white;
-    border: 2px solid rgb(13, 110, 253);
+    background-image: linear-gradient(to right, #6b11cbde 0%, #2574fcde 100%);
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .iconos-redes-sociales a:hover i {
@@ -1048,3 +1094,49 @@ footer {
 
 /* #3dff3e */
 /* #6E36E6 lila */
+
+
+/* medias querys responsive design*/
+
+@media screen and (max-width:1220px){
+    .contenedor,
+    .contenedor .header,
+    .contenedor2,
+    .card-container,
+    .form-container,
+    .contenedor-titulo-contacto,
+    .contenedor-glitch {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    /* .frame-3 {
+        height: 150px;
+    } */
+
+    .frame-3 {
+        display: none;
+    }
+
+    .boton-azul,
+    .boton-naranja{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .frame-3 {
+        height: 300px;
+        display: initial;
+    }
+
+    .boton-azul,
+    .boton-naranja{
+        display: initial;
+    }
+
+    
+}

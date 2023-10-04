@@ -1100,12 +1100,13 @@ footer {
 
 @media screen and (max-width:1220px){
     .contenedor,
-    .contenedor .header,
+    .contenedor header,
     .contenedor2,
     .card-container,
     .form-container,
     .contenedor-titulo-contacto,
-    .contenedor-glitch {
+    .contenedor-glitch,
+    .form-control {
         max-width: 1000px;
         padding: 0 20px;
     }
@@ -1124,6 +1125,14 @@ footer {
     .boton-naranja{
         display: none;
     }
+
+    .contenido-descripcion .titulo span:last-child {
+        font-size: 80px;
+    }
+
+    .contenedor-titulo-contacto span{
+        font-size: 3.5rem;
+    }
     
 }
 
@@ -1136,6 +1145,33 @@ footer {
     .boton-azul,
     .boton-naranja{
         display: initial;
+    }
+
+    .contenido-descripcion .titulo span:last-child {
+        font-size: 60px;
+    }
+
+    .typing h2{
+        font-size:2.5rem ;
+    }
+
+    .glitch {
+        font-size: 3.5rem;
+    }
+
+    .contenedor-nube{
+        padding-top: 200px;
+    }
+
+    .form-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -310px;
+    }
+
+    .form-boton {
+        margin-left: -310px;
     }
 
     

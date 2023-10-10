@@ -1174,5 +1174,9 @@ footer {
         margin-left: -310px;
     }
 
+    body {
+        background-image:linear-gradient(to right, #03061b7a 1%, #05167762 5%, #09085e67 80%, #03061b70 100%), url(./img/fondo9-2.jpg);
+    }
+
     
 }

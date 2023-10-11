@@ -1177,6 +1177,79 @@ footer {
     body {
         background-image:linear-gradient(to right, #03061b7a 1%, #05167762 5%, #09085e67 80%, #03061b70 100%), url(./img/fondo9-2.jpg);
     }
+}
 
-    
+@media screen and (max-width:360px) {
+    .barra-navegacion a {
+        font-size: 10px;
+
+    }
+
+    .barra-navegacion .logo img{
+        width: 20px;
+    }
+
+    .contenido-descripcion .titulo span:first-child {
+        font-size: 10px;
+    }
+
+    .contenido-descripcion .titulo span:last-child {
+        font-size: 30px;
+    }
+
+    .descripcion p {
+        font-size: 12px;
+    }
+
+    .contenido-descripcion .btn-link {
+        font-size:10px;
+        padding: 5px 10px;
+    }
+     .boton-cv {
+        font-size: 13px;
+        padding: 4px;
+     }
+
+     .typing h2{
+        font-size: 20px;
+     }
+
+     .typewriter-container {
+      margin-left: 55px;
+     }
+
+     .frame iframe {
+        width: 250px;
+        height: 200px;
+     }
+
+     .button {
+        margin: 0;
+        padding: 9px 15px;
+     }
+
+     .glitch {
+        font-size: 35px;
+     }
+
+     .contenedor-nube {
+        display: none;
+     }
+
+     .contenedor-titulo-contacto span {
+        font-size: 2rem;
+     }
+
+     .form-container {
+        margin-left: 290px;
+        width: 50px;
+     }
+
+     .form-boton {
+        font-size: 13px;
+     }
+
+     .subir {
+        font-size: 13px;
+     }
 }

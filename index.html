@@ -275,22 +275,22 @@
 
     <form action="https://formsubmit.co/alexandraramirez939@gmail.com" method="POST">
          <div class="form-container mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="¿como te llamas?">
+            <input type="text" name="name" required class="form-control" id="exampleFormControlInput1" placeholder="¿como te llamas?">
          </div>
          <div class="form-container mb-3">
 
-             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="dejame tu correo">
+             <input type="email" name="email" required class="form-control" id="exampleFormControlInput1" placeholder="dejame tu correo">
         </div>
         <div class="form-container mb-3">
 
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="tu mensaje:"></textarea>
-          <button class="form-boton">enviar</button>
-       </div>
-
-       <div class="subir">
-           <a href="#" class="boton-subir"><i class="bi bi-arrow-up"></i> volver a inicio</a>
+          <textarea type="text" class="form-control" required id="exampleFormControlTextarea1" rows="3" placeholder="tu mensaje:"></textarea>
+          <button type="submit" class="form-boton">enviar</button>
        </div>
     </form>
+
+    <div class="subir">
+      <a href="#" class="boton-subir"><i class="bi bi-arrow-up"></i> volver a inicio</a>
+  </div>
 
     <footer class="d-flex flex-column align-items-center justify-content-center">
       <img class="footer-logo" src="./img/icono-jap4.ico" alt="logo japones">

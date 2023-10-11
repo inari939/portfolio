@@ -1159,9 +1159,9 @@ footer {
         font-size: 3.5rem;
     }
 
-    .contenedor-nube{
-        padding-top: 200px;
-    }
+    .contenedor-nube {
+        display: none;
+     }
 
     .form-control {
         display: flex;
@@ -1177,9 +1177,13 @@ footer {
     body {
         background-image:linear-gradient(to right, #03061b7a 1%, #05167762 5%, #09085e67 80%, #03061b70 100%), url(./img/fondo9-2.jpg);
     }
+
+    body {
+        overflow-x: hidden;
+     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:390px) {
     .barra-navegacion a {
         font-size: 10px;
 
@@ -1251,5 +1255,9 @@ footer {
 
      .subir {
         font-size: 13px;
+     }
+
+     body {
+        overflow-x: hidden;
      }
 }

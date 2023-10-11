@@ -66,7 +66,7 @@ setInterval(function () {
 // https://api.jquery.com/jQuery.ajax
 $.ajax({
     method: 'POST',
-    url: 'https://formsubmit.co/ajax/your@email.com',
+    url: 'https://formsubmit.co/ajax/alexandraramirez939@gmail.com',
     dataType: 'json',
     accepts: 'application/json',
     data: {

@@ -1260,4 +1260,8 @@ footer {
      body {
         overflow-x: hidden;
      }
+
+     #particles-js {
+        display: none;
+     }
 }

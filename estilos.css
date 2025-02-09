@@ -1142,6 +1142,7 @@ footer {
 }
 
 @media screen and (max-width:768px) {
+
     .frame-3 {
         height: 300px;
         display: initial;
@@ -1151,6 +1152,10 @@ footer {
     .boton-naranja{
         display: initial;
     }
+
+    /* .titulo-span2 {
+        font-size: 1rem;
+    } */
 
     .contenido-descripcion .titulo span:last-child {
         font-size: 60px;
@@ -1210,9 +1215,18 @@ footer {
     #icon-menu {
         display: block;
     }
-    .contenido-descripcion .titulo span:last-child {
+    /* .contenido-descripcion .titulo span:last-child {
         font-size: 60px;
+    } */
+
+    .contenido-descripcion .titulo span:first-child {
+        font-size: 20px;
     }
+
+    .contenido-descripcion .titulo span:last-child {
+        font-size: 40px;
+    }
+
     .typing h2 {
         font-size: 2.5rem;
     }

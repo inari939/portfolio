@@ -1243,7 +1243,7 @@ footer {
     }
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:406px) {
     .barra-navegacion a {
         /* font-size: 10px;  antes*/
         font-size: 12px;

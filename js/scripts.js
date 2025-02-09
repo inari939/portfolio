@@ -59,4 +59,11 @@ setInterval(function () {
 }, 20)
 
 
+//menu hamburguesa
+
+
+document.getElementById("icon-menu").addEventListener("click", function() {
+    document.querySelector(".barra-navegacion ul").classList.toggle("active");
+});
+
 

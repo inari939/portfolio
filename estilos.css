@@ -26,6 +26,7 @@ html {
 
 /* estilos del fondo */
 body {
+    overflow-x: hidden; /* NUEVO CON MENMU HAMBURGUESA */
     background-image: linear-gradient(to right, #03061b7a 1%, #05167762 5%, #09085e67 80%, #03061b70 100%), url(./img/fondo-9.png);
     color: #fff;
     font-size: 18px;
@@ -34,7 +35,7 @@ body {
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
-
+/* estilso de la barra de scroll */
 body::-webkit-scrollbar {
     width: 17px;
     background: #13547a;
@@ -44,6 +45,7 @@ body::-webkit-scrollbar-thumb {
     background: #00e1ff;
     box-shadow: 0 0 15px 15px #00e1ff;
 }
+/* fin de estilos barra de scroll */
 
 #particles-js {
     height: 100vh;
@@ -73,13 +75,15 @@ body::-webkit-scrollbar-thumb {
     /* border: 3px solid #555555; */
 }
 
-/* estilos barra de navegacion */
+/* estilos barra de navegacion  #000000ab*/
+
 .barra-navegacion ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border-radius: 15px;
     align-items: center;
-    background-color: #000000ab;
-    box-shadow: 0 0 30px 25px #000000ab;
+    background-color: transparent;
+    box-shadow: 0 0 20px 15px #6de8f8;
 
 }
 
@@ -101,7 +105,7 @@ body::-webkit-scrollbar-thumb {
 
 .barra-navegacion a {
     text-decoration: none;
-    color: #647abd;
+    color: #fff;
     font-size: 19px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -132,9 +136,10 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     right: 20px;
     top: 16px;
-    font-size: 20px;
+    font-size: 27px;
     background: #080918;
-    border-radius: 100%;
+    box-shadow: 0 0 30px 25px #00e1ff;
+    border-radius: 30%;
     color: #00e1ff;
     display: none;
     justify-content: center;
@@ -1174,6 +1179,7 @@ footer {
         margin-left: -310px;
     }
 
+
     body {
         background-image:linear-gradient(to right, #03061b7a 1%, #05167762 5%, #09085e67 80%, #03061b70 100%), url(./img/fondo9-2.jpg);
     }
@@ -1181,11 +1187,52 @@ footer {
     body {
         overflow-x: hidden;
      }
+
+
+     /* nuevo */
+
+     .barra-navegacion ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+    
+    .barra-navegacion ul.active {
+        display: flex;
+    }
+    
+    #icon-menu {
+        display: block;
+    }
+    .contenido-descripcion .titulo span:last-child {
+        font-size: 60px;
+    }
+    .typing h2 {
+        font-size: 2.5rem;
+    }
+    .glitch {
+        font-size: 3.5rem;
+    }
+    .contenedor-nube {
+        display: none;
+    }
+    .form-container {
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:390px) {
     .barra-navegacion a {
-        font-size: 10px;
+        /* font-size: 10px;  antes*/
+        font-size: 12px;
 
     }
 
@@ -1202,7 +1249,8 @@ footer {
     }
 
     .descripcion p {
-        font-size: 12px;
+        /* font-size: 12px; antes*/
+        font-size: 14px;
     }
 
     .contenido-descripcion .btn-link {
@@ -1233,7 +1281,8 @@ footer {
      }
 
      .glitch {
-        font-size: 35px;
+        /* font-size: 35px; antes*/
+        font-size: 2.5rem;
      }
 
      .contenedor-nube {
